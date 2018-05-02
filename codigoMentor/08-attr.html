@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>attr part 1</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
+</head>
+<body>
+
+	Nombre: <input type="text" id="miID" placeholder="Nombre">
+	Email: <input  id="miID2" placeholder="Correo">
+	<div id="info"></div>
+	<button>Click</button>
+
+	<script>
+		//attr obtenr o establecer un nuevo valor a un determinado atributo
+		$(document).ready(function(){
+			//obtener
+			$("button").click(function(){
+				var x = $("input[type='text']").attr("id");
+				$("#info").html(x);
+			});
+			//Agregar
+			$("button").click(function(){
+				$("input[type='email']").attr("id", "miCorreo");
+				//$("#miID2").attr("type", "email");
+			});
+
+		});
+
+	</script>
+	
+</body>
+</html>

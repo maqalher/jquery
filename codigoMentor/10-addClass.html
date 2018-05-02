@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>addClass</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<style>
+		.miClase{
+			color: red;
+		}
+		.miClase1{
+			color: yellow;
+		}
+		.miClase2{
+			color: blue;
+		}
+		.miClase3{
+			color: green;
+		}
+	</style>  
+</head>
+<body>
+
+	<p>Primer parrafo</p>
+	<p>Segundo parrafo</p>
+	<p>Tercer parrafo</p>
+	<button>Click</button>
+
+	<script>
+		$(document).ready(function(){
+			$("button").click(function(){
+				//Clase general
+				$("p").addClass("miClase");
+				//Iteracion implicita
+				$("p").addClass(function(index){
+					return "miClase" + (index + 1);
+				});
+			});
+		});
+
+	</script>
+	
+</body>
+</html>

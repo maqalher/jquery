@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Even Odd Selector</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
+</head>
+<body>
+
+	<table>
+		<tr>
+			<td>Alan</td>
+			<td>28</td>
+		</tr>
+		<tr>
+			<td>Toño</td>
+			<td>30</td>
+		</tr>
+		<tr>
+			<td>Ruben</td>
+			<td>26</td>
+		</tr>
+		<tr>
+			<td>Luis</td>
+			<td>32</td>
+		</tr>
+	</table>
+
+	<script>
+		$(document).ready(function(){
+			$("td").css("border", "1px solid");
+			$("tr:odd").css("background-color", "yellow");
+			$("tr:odd").css("font-size", "30px");
+			$("tr:even").css("background-color", "red");
+		});
+
+	</script>
+	
+</body>
+</html>

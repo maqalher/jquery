@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>attr part 2</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
+	<style>
+		#p1{
+			background: red;
+		}
+		#p2{
+			background: blue;
+		}
+		#p3{
+			background: green;
+		}
+		#p4{
+			background: yellow;
+		}
+	</style>
+</head>
+<body>
+
+	<p>Primero</p>
+	<p>Segundo</p>
+	<p>Tercero</p>
+	<p>Cuarto</p>
+	<button>Click</button>
+
+	<script>
+		$(document).ready(function(){
+			$("button").click(function(){
+				$("p").attr("id", function(index){
+					return "p" + (index + 1);
+				});
+			});
+
+		});
+
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Text $ HTML</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
+</head>
+<body>
+	<p id="text1">Texto 1</p>
+	<p id="text2">Texto 2</p>
+
+	<button id="btn1">Texto</button>
+	<button id="btn2">HTML</button>
+
+	<script>
+		$(document).ready(function(){
+			$("#btn1").click(function(){
+				$("#text1").text("<b>Texto</b>");
+			});
+
+			$("#btn2").click(function(){
+				$("#text2").html("<b>Texto</b>");
+			});
+
+		});
+
+	</script>
+	
+</body>
+</html>
