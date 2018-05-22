@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Keydown</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  	
+</head>
+<body>
+	<form>
+		<p>Nombre: <input type="text" name=""></p>
+		<p>Email: <input type="email" name=""></p>
+	</form>
+
+	
+	<script>
+
+	$(document).ready(function(){
+	
+		$("input[type='text']").keydown(function(){
+			$(this).css("background-color","yellow");
+		});	
+
+		$("input[type='email']").keydown(function(){
+			$(this).css("background-color","red");
+		});	
+
+	});
+		
+	</script>
+	
+</body>
+</html>

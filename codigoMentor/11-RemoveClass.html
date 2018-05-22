@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>RemoveClass</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+	<style type="text/css">
+		.nuevaClass{
+			color: blue;
+			font-size: 25px;
+		}
+
+		.miClase{
+			background: green;
+			text-align: center;
+			padding-top: 50px;
+			width: 100px;
+			height: 60px;
+			font-size: 25px;
+		}
+	</style>	
+</head>
+<body>
+	
+	<p class="nuevaClass">Bienvenidos, este es un parrafo</p>
+	
+	<button>click</button>
+
+	<br>
+
+	<h3>Ejemplo 2</h3>
+
+	<div id="caja">Caja</div>
+	<button id="add">Add</button>
+	<button id="remove">Remove</button>
+
+	<script>
+
+
+	$(document).ready(function(){
+		$("button").click(function(){
+			$('p').removeClass('nuevaClass');
+		});
+
+
+		$("#add").click(function(){
+			$("#caja").addClass("miClase");
+		});
+
+		$("#remove").click(function(){
+			$("#caja").removeClass("miClase");
+		})
+	});
+		
+	</script>
+	
+</body>
+</html>

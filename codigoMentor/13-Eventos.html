@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Eventos</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  	
+	<style type="text/css">
+		#p1{
+			background: red;
+			height: 60px;
+			width: 60px;
+			border: 2px solid black;
+			border-radius: 8px;
+			text-align: center;	
+		}
+		#p2{
+			background: yellow;
+			height: 60px;
+			width: 60px;
+			border: 2px solid black;
+			border-radius: 8px;
+			text-align: center;	
+		}
+		#p3{
+			background: orange;
+			height: 60px;
+			width: 60px;
+			border: 2px solid black;
+			border-radius: 8px;
+			text-align: center;	
+		}
+	</style>
+</head>
+<body>
+	<p id="p1">Texto 1</p>
+	<p id="p2">Texto 2</p>
+	<p id="p3">Texto 3</p>
+
+	
+	<script>
+
+	$(document).ready(function(){
+	
+		$("#p1").dblclick(function(){
+			$(this).hide();
+		});
+		$("#p2").dblclick(function(){
+			alert("This is my message");
+		});
+		$("#p3").dblclick(function(){
+			$(this).hide();
+		});
+
+
+	});
+		
+	</script>
+	
+</body>
+</html>
